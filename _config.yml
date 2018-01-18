@@ -1,10 +1,10 @@
-url: https://y7kim.github.io
-baseurl: /agency-jekyll-theme/
+url: https://artsitoya.com
+baseurl: ""
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Arts Itoya
+email: info@artsitoya.com
+description: "Arts Itoya is an artist in residence program in Takeo, Saga Prefecture, Japan. Studio Kura, the company in charge of the long running residence progam in Fukuoka Prefecture, started it in 2018 after reforming an old kimono shop called Itoya."
 
 
 # Team names, titles and social links
@@ -57,8 +57,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 7271 Takeochō Ōaza Takeo,
+  - line: Takeo-shi, Saga-ken 843-0022
 
 # Build settings
 markdown: kramdown
