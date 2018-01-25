@@ -4,13 +4,24 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+var scrollHere = function(element) {
+    $('html, body').stop().animate({
+        scrollTop: $(element.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+}
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        scrollHere($(this));
+        event.preventDefault();
+    });
+    $('#hidecontact').bind('click', function() {
+        $("section#contact").addClass('hidden');
+    });
+    $('#contactbutton').bind('click', function() {
+        $("section#contact").removeClass('hidden');
+        scrollHere($(this));
         event.preventDefault();
     });
 });
