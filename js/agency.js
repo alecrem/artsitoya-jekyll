@@ -19,8 +19,16 @@ $(function() {
     $('#hidecontact').bind('click', function() {
         $("section#contact").addClass('hidden');
     });
+    $('#hideapply').bind('click', function() {
+        $("section#apply").addClass('hidden');
+    });
     $('#contactbutton').bind('click', function() {
         $("section#contact").removeClass('hidden');
+        scrollHere($(this));
+        event.preventDefault();
+    });
+    $('#applybutton').bind('click', function() {
+        $("section#apply").removeClass('hidden');
         scrollHere($(this));
         event.preventDefault();
     });
