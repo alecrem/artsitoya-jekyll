@@ -9,27 +9,21 @@ description: "Write an awesome description for your new site here. You can edit 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Shim Woo Chan
   pic: 1
-  position: Lead Designer
+  position: Artsit in Residence Coordinator
   social:
-    - title: twitter
-      url: #
     - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+      url: https://www.facebook.com/woochan.shim.73
 
-- name: Larry Parker
+
+- name: Hirofumi Matsuzaki
   pic: 2
-  position: Lead Marketer
+  position: Founder
   social:
-    - title: twitter
-      url: #
     - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+      url: https://www.facebook.com/hirofumi.matsuzaki
+
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
