@@ -1,15 +1,12 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Great Camphor Tree
+subtitle:
 layout: default
 modal-id: 1
 date: 2014-07-18
 img: takeo-tree.jpg
 thumbnail: takeo-tree-thumbnail.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: Visit this shrine under a camphor tree at Takeo Jinja, 900 m from Arts Itoya.
 
 ---
