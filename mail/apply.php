@@ -20,17 +20,31 @@ $statement = $_POST['statement'];
 $cv = $_POST['cv'];
 $message = $_POST['message'];
 
-// Create the email and send the message
+// Send an email to us
 $to = 'info@artsitoya.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-// $to = 'karawapo@gmail.com'; // For testing
+// $to = 'residence@studiokura.com'; // For testing
 $email_subject = "Arts Itoya Application Form:  $name";
 $email_body = "Arts Itoya has received a new message from the application form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\n";
 if (!empty($web_address)) {
-	$email_body .= "Web: $web_address\n\n";
+	$email_body .= "Website URL: $web_address\n\n";
 }
-$email_body .= "Month: $month\n\nArtistStatemnt:\n$statement\n\nResume:\n$cv\n\nPlan:\n$message";
+$email_body .= "Month: $month\n\nArtistStatemnt:\n$statement\n\nResume:\n$cv\n\nProposal:\n$message";
 $headers = "From: noreply@artsitoya.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
+
+// Send an email to the applicant
+// $to = 'info@artsitoya.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = $email_address;
+$email_subject = "Thank you for applying to Arts Itoya";
+$email_body = "Arts Itoya has received your application, and will review it and reply soon.\n\n"."Here is your message for your reference:\n\nName: $name\n\nEmail: $email_address\n\n";
+if (!empty($web_address)) {
+	$email_body .= "Website URL: $web_address\n\n";
+}
+$email_body .= "Month: $month\n\nArtist Statemnt:\n$statement\n\nResume:\n$cv\n\nProposal:\n$message";
+$headers = "From: noreply@artsitoya.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: noreply@artsitoya.com";
+mail($to,$email_subject,$email_body,$headers);
+
 return true;
 ?>
