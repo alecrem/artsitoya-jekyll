@@ -16,7 +16,7 @@
                         <ul class="list-inline social-buttons">
                             {% for network in member.social %}
                             <li>
-                                <a href="{{ network.url }}">
+                                <a href="{{ network.url }}" title="{{ member.name }} on {{ network.title }}">
                                     <i class="fa fa-{{ network.title }}"></i>
                                 </a>
                             </li>
@@ -27,10 +27,10 @@
                 </div>
                 {% endfor %}
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="large text-muted"></p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>

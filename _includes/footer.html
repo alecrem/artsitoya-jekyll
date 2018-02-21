@@ -7,16 +7,18 @@
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        <li><a href="{{ network.url }}" title="{{ network.title }}"><i class="fa fa-{{ network.title }}"></i></a>
                         </li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
+                    <ul class="list-inline quicklinks" style="line-height: 1.2em;">
+                        <li>
+                            Address:
+                            <a href="https://goo.gl/maps/8A2aPC1h47z" title="Look up on Google Maps">{% for line in site.address %}
+                            {{ line.line }}
+                            {% endfor %}</a>
                         </li>
                     </ul>
                 </div>

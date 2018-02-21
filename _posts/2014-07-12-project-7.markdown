@@ -1,0 +1,12 @@
+---
+title: Studio from Outside
+subtitle:
+layout: default
+modal-id: 7
+date: 2014-07-12
+img: artsitoya-outside2.jpg
+thumbnail: artsitoya-outside2-thumbnail.jpg
+alt: image-alt
+description: The studio faces two streets and has large windows which let a lot of light in.
+
+---

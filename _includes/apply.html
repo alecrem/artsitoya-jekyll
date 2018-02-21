@@ -3,7 +3,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Apply</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">
+                        Please use this form to send all required information. In the case you did not receive our automated reply in 10 minutes, please mail us at info@artsitoya.com after checking your spam folder in case it is hidding there.
+                    </h3>
                 </div>
             </div>
             <div class="row">
@@ -19,17 +21,33 @@
                                     <input type="email" class="form-control applyfield" placeholder="Your Email *" id="apply_email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
+                                <div class="control-group form-group">
+                                    <input type="text" class="form-control applyfield" placeholder="Your Website's URL" id="apply_web">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <input type="text" class="form-control applyfield" placeholder="Preferred month to stay (example: 01/2018) *" id="apply_month" required data-validation-required-message="Please enter your preferred month to stay (example: 01/2018).">
+                                    <p class="help-block text-danger"></p>
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <textarea class="form-control applyfield" placeholder="Your Message *" id="apply_message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control applyfield" placeholder="Artist Statement *" id="apply_statement" required data-validation-required-message="Please enter your artist statement."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <textarea class="form-control applyfield" placeholder="Resume (CV) *" id="apply_cv" required data-validation-required-message="Please enter your resume."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group form-group">
+                                    <textarea class="form-control applyfield" placeholder="Proposal for your project *" id="apply_message" required data-validation-required-message="Tell us about the project you would pursue during your stay."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="apply_success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">Send</button>
                                 <a href="#apply" class="btn btn-xl" id="hideapply">Hide this form</a>
                             </div>
                         </div>

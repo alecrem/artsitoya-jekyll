@@ -10,6 +10,10 @@ $(function() {
             // get values from FORM
             var name = $("input#apply_name").val();
             var email = $("input#apply_email").val();
+            var web = $("input#apply_web").val();
+            var month = $("input#apply_month").val();
+            var statement = $("textarea#apply_statement").val();
+            var cv = $("textarea#apply_cv").val();
             var message = $("textarea#apply_message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -22,6 +26,10 @@ $(function() {
                 data: {
                     name: name,
                     email: email,
+                    web: web,
+                    month: month,
+                    statement: statement,
+                    cv: cv,
                     message: message
                 },
                 cache: false,
