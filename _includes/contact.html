@@ -1,4 +1,4 @@
-<section id="contact" class="hidden">
+<section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -8,11 +8,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" novalidate method="post" action="/mail/contact_me.php">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control contactfield" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control contactfield" placeholder="Your Name" id="name">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
@@ -22,7 +22,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <textarea class="form-control contactfield" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control contactfield" placeholder="Your Message" id="message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -30,7 +30,6 @@
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
                                 <button type="submit" class="btn btn-xl">Send Message</button>
-                                <a href="#contact" class="btn btn-xl" id="hidecontact">Hide this form</a>
                             </div>
                         </div>
                     </form>

@@ -1,13 +1,6 @@
 <?php
 // Check for empty fields
-if(empty($_POST['name']) ||
-	empty($_POST['email']) ||
-	empty($_POST['month']) ||
-	empty($_POST['statement']) ||
-	empty($_POST['cv']) ||
-	empty($_POST['message']) ||
-	!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
-){
+if(empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 	echo "No arguments Provided!";
 	return false;
 }
@@ -46,5 +39,6 @@ $headers = "From: noreply@artsitoya.com\n"; // This is the email address the gen
 $headers .= "Reply-To: noreply@artsitoya.com";
 mail($to,$email_subject,$email_body,$headers);
 
+header('Location: /');
 return true;
 ?>

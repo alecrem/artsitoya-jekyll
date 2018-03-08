@@ -1,4 +1,4 @@
-<section id="apply" class="hidden">
+<section id="apply">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -10,11 +10,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="applyMessage" id="applyForm" novalidate>
+                    <form name="applyMessage" id="applyForm" novalidate method="post" action="/mail/contact_me.php">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control applyfield" placeholder="Your Name *" id="apply_name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control applyfield" placeholder="Your Name" id="apply_name">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
@@ -26,21 +26,21 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control applyfield" placeholder="Preferred month to stay (example: 01/2018) *" id="apply_month" required data-validation-required-message="Please enter your preferred month to stay (example: 01/2018).">
+                                    <input type="text" class="form-control applyfield" placeholder="Preferred month to stay (example: 01/2018)" id="apply_month">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <textarea class="form-control applyfield" placeholder="Artist Statement *" id="apply_statement" required data-validation-required-message="Please enter your artist statement."></textarea>
+                                    <textarea class="form-control applyfield" placeholder="Artist Statement" id="apply_statement"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <textarea class="form-control applyfield" placeholder="Resume (CV) *" id="apply_cv" required data-validation-required-message="Please enter your resume."></textarea>
+                                    <textarea class="form-control applyfield" placeholder="Resume (CV)" id="apply_cv"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <textarea class="form-control applyfield" placeholder="Proposal for your project *" id="apply_message" required data-validation-required-message="Tell us about the project you would pursue during your stay."></textarea>
+                                    <textarea class="form-control applyfield" placeholder="Proposal for your project" id="apply_message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -48,7 +48,6 @@
                             <div class="col-lg-12 text-center">
                                 <div id="apply_success"></div>
                                 <button type="submit" class="btn btn-xl">Send</button>
-                                <a href="#apply" class="btn btn-xl" id="hideapply">Hide this form</a>
                             </div>
                         </div>
                     </form>
