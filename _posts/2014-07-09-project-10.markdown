@@ -1,0 +1,12 @@
+---
+title: Residence House, Inside
+subtitle:
+layout: default
+modal-id: 10
+date: 2014-07-09
+img: takeo-house3.jpg
+thumbnail: takeo-house3-thumbnail.jpg
+alt: image-alt
+description:
+
+---

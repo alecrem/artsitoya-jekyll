@@ -1,0 +1,12 @@
+---
+title: Residence House, Room
+subtitle:
+layout: default
+modal-id: 11
+date: 2014-07-08
+img: takeo-house4.jpg
+thumbnail: takeo-house4-thumbnail.jpg
+alt: image-alt
+description:
+
+---

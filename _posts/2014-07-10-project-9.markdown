@@ -1,0 +1,12 @@
+---
+title: Residence House, Entrance
+subtitle:
+layout: default
+modal-id: 9
+date: 2014-07-10
+img: takeo-house2.jpg
+thumbnail: takeo-house2-thumbnail.jpg
+alt: image-alt
+description:
+
+---
