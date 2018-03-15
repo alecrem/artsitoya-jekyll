@@ -1,0 +1,12 @@
+---
+title: Residence House, Fassade
+subtitle:
+layout: default
+modal-id: 8
+date: 2014-07-11
+img: takeo-house1.jpg
+thumbnail: takeo-house1-thumbnail.jpg
+alt: image-alt
+description:
+
+---

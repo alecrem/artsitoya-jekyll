@@ -1,0 +1,12 @@
+---
+title: Residence House, Kitchen
+subtitle:
+layout: default
+modal-id: 12
+date: 2014-07-07
+img: takeo-house5.jpg
+thumbnail: takeo-house5-thumbnail.jpg
+alt: image-alt
+description:
+
+---
