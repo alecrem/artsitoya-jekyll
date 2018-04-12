@@ -10,37 +10,37 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="applyMessage" id="applyForm" novalidate method="post" action="/mail/contact_me.php">
+                    <form name="applyMessage" id="applyForm" novalidate method="post" action="/mail/apply.php">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control applyfield" placeholder="Your Name" id="apply_name">
+                                    <input type="text" class="form-control applyfield" placeholder="Your Name" id="apply_name" name="name">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <input type="email" class="form-control applyfield" placeholder="Your Email *" id="apply_email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control applyfield" placeholder="Your Email *" id="apply_email" name="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control applyfield" placeholder="Your Website's URL" id="apply_web">
+                                    <input type="text" class="form-control applyfield" placeholder="Your Website's URL" id="apply_web" name="web">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control applyfield" placeholder="Preferred month to stay (example: 01/2018)" id="apply_month">
+                                    <input type="text" class="form-control applyfield" placeholder="Preferred month to stay (example: 01/2018)" id="apply_month" name="month">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <textarea class="form-control applyfield" placeholder="Artist Statement" id="apply_statement"></textarea>
+                                    <textarea class="form-control applyfield" placeholder="Artist Statement" id="apply_statement" name="statement"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <textarea class="form-control applyfield" placeholder="Resume (CV)" id="apply_cv"></textarea>
+                                    <textarea class="form-control applyfield" placeholder="Resume (CV)" id="apply_cv" name="cv"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group form-group">
-                                    <textarea class="form-control applyfield" placeholder="Proposal for your project" id="apply_message"></textarea>
+                                    <textarea class="form-control applyfield" placeholder="Proposal for your project" id="apply_message" name="message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>

@@ -26,6 +26,6 @@ $headers = "From: noreply@artsitoya.com\n"; // This is the email address the gen
 $headers .= "Reply-To: noreply@artsitoya.com";
 mail($to,$email_subject,$email_body,$headers);
 
-header('Location: /');
+header('Location: /submitted.php?form=contact');
 return true;
 ?>
