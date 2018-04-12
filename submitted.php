@@ -89,8 +89,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                    <?php if($_GET['form'] === 'apply'): ?>
+                    <h2 class="section-heading">We got your application</h2>
+                    <h3 class="section-subheading text-muted">Thank you for applying to Arts Itoya. You should get am automated confirmation mail from us within minutes. If you do not, please contact us at info@artsitoya.com</h3>
+                    <?php else: ?>
                     <h2 class="section-heading">We got your mail</h2>
-                    <h3 class="section-subheading text-muted">Thank you for showing your interest in Arts Itoya. You should get am automated confirmation mail from us within minutes. If you do not, please contact us at info@artsitoya.com</h3>
+                    <h3 class="section-subheading text-muted">Thank you for contacting Arts Itoya. You should get am automated confirmation mail from us within minutes. If you do not, please contact us at info@artsitoya.com</h3>
+                    <?php endif; ?>
                     <a href='/' class="btn btn-xl">Back to Arts Itoya</a>
                 </div>
             </div>
@@ -146,3 +151,4 @@
 
     </body>
 </html>
+<?php
